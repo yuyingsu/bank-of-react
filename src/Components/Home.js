@@ -29,16 +29,16 @@ class Home extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-              <NavLink href="/userProfile">User Profile</NavLink>
+              <NavLink tag={Link} to="/userDebits">Debits</NavLink>
               </NavItem>
               <NavItem>
-              <NavLink href="/login">Login</NavLink>
+              <NavLink tag={Link} to="/userCredits">Credits</NavLink>
               </NavItem>
               <NavItem>
-              <NavLink href="/userDebits">Debits</NavLink>
+              <NavLink tag={Link} to="/login">Log in</NavLink>
               </NavItem>
               <NavItem>
-              <NavLink href="/userCredits">Credits</NavLink>
+              <NavLink tag={Link} to="/userProfile">Profile</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
