@@ -48,7 +48,7 @@ class App extends Component {
         amount:element["amount"]
       }
       this.state.debits.push(debit);
-      this.setState(prevstate => ({ accountBalance: prevstate.accountBalance - element["amount"]}));
+      this.setState(prevstate => ({ accountBalance: prevstate.accountBalance + element["amount"]}));
     });
     this.state.data2.forEach(element => {
       const credit = {
@@ -57,7 +57,7 @@ class App extends Component {
           amount:element["amount"]
         }
         this.state.credits.push(credit);
-        this.setState(prevstate => ({ accountBalance: prevstate.accountBalance + element["amount"]}));
+        this.setState(prevstate => ({ accountBalance: prevstate.accountBalance - element["amount"]}));
       });
   }
 
